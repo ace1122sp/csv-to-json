@@ -1,4 +1,4 @@
 # csv-to-json
 
 ## Use
-npm index.js \<url-with csv file\>
+npm index.js \<url-with-csv-file\>
