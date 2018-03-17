@@ -1,0 +1,24 @@
+{
+  "name": "csv-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ace1122sp/csv-to-json.git"
+  },
+  "keywords": [],
+  "author": "ace1122sp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ace1122sp/csv-to-json/issues"
+  },
+  "homepage": "https://github.com/ace1122sp/csv-to-json#readme",
+  "dependencies": {
+    "csvtojson": "1.1.9",
+    "uuid": "3.2.1"
+  }
+}
