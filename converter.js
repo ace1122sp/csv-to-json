@@ -1,4 +1,4 @@
-const fs = require('csvtojson');
+const fs = require('fs');
 const path = require('path');
 const csvtojson = require('csvtojson');
 
