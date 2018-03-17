@@ -1,6 +1,6 @@
 const https = require('https');
 
-const fetchPage = (urlF, callback) => {
+const download = (urlF, callback) => {
   https.get(urlF, response => {
     let buffer = '';
     response.on('data', chunk => {
@@ -15,4 +15,4 @@ const fetchPage = (urlF, callback) => {
   });
 }
 
-module.exports = fetchPage;
+module.exports = download;

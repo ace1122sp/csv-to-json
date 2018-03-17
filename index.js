@@ -2,14 +2,14 @@ const path = require('path');
 const fs = require('fs');
 const uuidv1 = require('uuid/v1');
 const convertToJson = require('./converter');
-const fetchPage = require('./downloader');
+const download = require('./downloader');
 
 const downloadPageAndConvert = url => {
   console.log('downloading', url);
   const folderName = uuidv1();
   fs.mkdirSync(folderName);
 
-  fetchPage(url, (error, data) => {
+  download(url, (error, data) => {
     if(error) return console.error(error);
     fs.writeFileSync(path.join(__dirname, folderName, 'url.txt'), url);
     fs.writeFile(path.join(__dirname, folderName, 'customer-data.csv'), data, () => {
