@@ -10,7 +10,7 @@ function convertToJson(path, filename) {
       arr.push(obj);
     })
     .on('done', error => {
-      fs.writeFile(filename, JSON.stringify(arr), () => {
+      fs.writeFile(filename, JSON.stringify(arr, null, 2), () => {
         console.log('file transformed to JSON');
       });
     })
